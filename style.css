@@ -1,0 +1,2270 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+
+.noto-sans jp-[uniquifier] {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+:root {
+  --dark-brown: #523b1c;
+  --brown: #8a7d6f;
+  --light-brown: #d5cbbd;
+  --red: #d90e29;
+  --orange: #de6e14;
+  --glay: #707070;
+  --light-yellow: #f5f3ed;
+  --ocher: #cba73b;
+  --light-ocher: #e3dab3;
+
+  --blue: #013b82;
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  background-color: #fff !important;
+  min-width: 1190px;
+  font-family: "Noto Sans JP", "繝｡繧､繝ｪ繧ｪ", Meiryo, "繝偵Λ繧ｮ繝手ｧ偵ざ繧ｷ繝�け", "Hiragino Sans", YuGothic, "Yu Gothic", sans-serif;
+  color: var(--dark-brown);
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: #111;
+}
+
+.pt_evt_none {
+  pointer-events: none;
+}
+
+#RthCustomizeW {
+  width: 1190px !important;
+}
+
+#RthCustomizeW p {
+  margin: 1em 0;
+  color: var(--dark-brown);
+  font-size: 15px;
+  letter-spacing: 0.1em;
+}
+
+#htlHeader ul li#htlRnk span.avrgNum {
+  width: 40px;
+}
+
+#htlContents {
+  margin: 0 auto;
+  background: #fff;
+  padding: 0 40px 0;
+  position: relative;
+  width: 1190px !important;
+  min-width: 1190px !important;
+  min-height: 1500px;
+}
+
+div#RthCustomize {
+  width: 1190px;
+}
+
+#htlSide-A {
+  position: absolute;
+  top: 820px;
+  left: 40px;
+}
+
+#htlMainContent {
+  width: 1190px !important;
+  margin-left: 0 !important;
+}
+
+.mainContents h1,
+.mainContents h2,
+.mainContents h3,
+.mainContents h4,
+.mainContents h5,
+.mainContents span,
+.mainContents dl,
+.mainContents p,
+.mainContents ul li,
+.mainContents a {
+  font-family: "Noto Sans JP", "繝｡繧､繝ｪ繧ｪ", Meiryo, "繝偵Λ繧ｮ繝手ｧ偵ざ繧ｷ繝�け", "Hiragino Sans", YuGothic, "Yu Gothic", sans-serif;
+}
+
+.ttl-wrap {
+  margin: 0 auto 30px;
+  text-align: center;
+  width: fit-content;
+}
+
+.ttl-wrap h2 {
+  position: relative;
+  width: fit-content;
+  padding: 0 20px;
+}
+
+.ttl-wrap h2 .en-fonts {
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: var(--blue);
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.ttl-wrap h2 .en-fonts::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--blue);
+  content: "";
+}
+
+.ttl-wrap h2 .jp-fonts {
+  display: block;
+  margin-top: 10px;
+  padding-top: 10px;
+  color: var(--dark-brown);
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+#RthCustomizeW .mainContents .ttl-wrap h2 {
+  margin: 10px 0;
+  line-height: 1;
+  color: var(--brown);
+  font-family: var(--en);
+  font-size: var(--f-36);
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+#RthCustomizeW .mainContents .ttl-wrap h3 {
+  padding: 0;
+  color: var(--jp-brown);
+  font-family: var(--min);
+  font-size: var(--f-16);
+  border: none;
+}
+
+.__center {
+  text-align: center;
+}
+
+.btn-wrap {
+  width: 100%;
+  margin: 50px auto 0;
+}
+
+/* 繝懊ち繝ｳ蜈ｱ騾壹せ繧ｿ繧､繝ｪ繝ｳ繧ｰ */
+a.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: none;
+  width: 100%;
+  height: 50px;
+}
+
+a.btn span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+a.btn:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+a.btn:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+a.btn:hover span {
+  color: #fff;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#header a.btn,
+.plan a.btn {
+  width: 185px;
+}
+
+#header a.btn span::after,
+.plan a.btn span::after {
+  right: 35px;
+}
+
+#header a.btn span {
+  position: absolute;
+  left: -16px;
+  padding: 16px 0 16px 6px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+#header a.btn span::after {
+  content: "";
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/arrow-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* btn-01濶ｲ險ｭ螳� */
+a.btn-01 {
+  background: var(--blue);
+}
+
+a.btn-01:after {
+  background: var(--ocher);
+}
+
+section.common-bg {
+  background: var(--light-yellow);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+  }
+  
+#header ul {
+    display: flex;
+    justify-content: flex-start;
+    width: 750px;
+    align-items: center;
+    gap: 6px;
+  }
+
+#header ul li {
+  margin: 0 0.8em 0 0;
+  list-style: none;
+}
+
+#header ul li:not(:first-child) {
+  margin: 0 0.6em;
+}
+
+#header ul li a {
+  position: relative;
+  display: block;
+  padding: 10px 0.5em;
+  font-family: var(--min);
+  font-size: 15px;
+  color: var(--dark-brown);
+}
+
+#header ul li a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--blue);
+  bottom: 0;
+  left: 0;
+  width: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#header ul li a:hover {
+  color: var(--blue);
+}
+
+#header ul li a:hover::after {
+  width: 100%;
+}
+
+/**繝｡繧､繝ｳ繝薙ず繝･繧｢繝ｫ**/
+.visCont {
+  width: 1190px;
+  background: #f1f1f1;
+  margin: 30px auto 0;
+  left: 0px;
+  height: 600px;
+}
+
+.mainContents {
+  position: relative;
+  width: 950px;
+  margin: 0px auto 0;
+}
+
+.mainContents section {
+  margin: 60px 0;
+  padding: 40px 0;
+}
+
+#main-slide .sp-arrow {
+  font-size: 72px;
+}
+
+/* top - concept
+*************************************/
+.concept .youtube-wrap iframe {
+  margin: 0 auto;
+}
+
+.concept-img {
+  width: 950px;
+  height: 440px;
+  background: url("https://raw.githubusercontent.com/PiyoPiyoSTUDIO/csshistory/main/mainimage.jpg") center / cover no-repeat;
+}
+
+/* point */
+.concept.section .ttl-wrap {
+  margin: 80px auto 50px;
+}
+
+.point-img {
+  width: 950px;
+  height: 470px;
+  background: url("https://raw.githubusercontent.com/PiyoPiyoSTUDIO/csshistory/main/pointimage.png") center / cover no-repeat;
+  margin-top: 50px;
+}
+
+/* top- room
+------------------------------------------------*/
+.room .column2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.room .column2 .column2__inner:nth-of-type(1) {
+  width: 40%;
+}
+
+.room .column2 .text dl {
+  display: flex;
+  gap: 10px;
+  line-height: 1.8;
+  padding: 4px 0;
+}
+
+.room .column2 .text dt {
+  min-width: 8em;
+}
+
+.room .column2__inner.text .dl-wrap {
+  padding: 10px 0;
+}
+
+.top .room .column2 .column2__inner.img {
+  width: 595px;
+  height: 340px;
+  background: url(c2101.jpg) center / cover no-repeat;
+}
+
+.room .btn-plan {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.room a.btn-01 span {
+  position: absolute;
+  padding: 16px 20px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.room a.btn-01 span::after,
+.room a.btn-02 span::after {
+  content: "";
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/arrow-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* top - breakfast
+----------------------------------------------*/
+
+.breakfast .column2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column2.reverse {
+  flex-direction: row-reverse;
+}
+
+.breakfast .column2__inner:nth-of-type(1) {
+  width: 40%;
+}
+
+.breakfast .ttl-wrap {
+  margin: 0 auto 30px;
+}
+
+.breakfast .column2__inner.img {
+  width: 595px;
+  height: 340px;
+  background: url(C2102.jpg) center / cover no-repeat;
+}
+
+.breakfast dl {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+.breakfast dt {
+  width: 25%;
+}
+
+.breakfast .btn-plan {
+  display: block;
+  margin: 20px auto;
+}
+
+.breakfast a.btn-01 span {
+  position: absolute;
+  padding: 16px 20px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.breakfast a.btn-01 span::after {
+  content: "";
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/arrow-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* top- plan
+-----------------------------------------------*/
+.plan .column3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan .column3 .column3__inner {
+  width: calc((100% / 3) - 10px);
+}
+
+.plan .column3 .column3__inner h4 {
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.plan .column3 .column3__inner a {
+  color: var(--dark-brown);
+}
+
+.plan .column3 .column3__inner a:hover {
+  opacity: 0.65;
+}
+
+.plan-01 {
+  aspect-ratio: 16 / 11;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/top/top-plan-01.webp) center / cover no-repeat;
+  margin: 0;
+}
+
+.plan-02 {
+  aspect-ratio: 16 / 11;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/top/top-plan-02.webp) center / cover no-repeat;
+  margin: 0;
+}
+
+.plan-03 {
+  aspect-ratio: 16 / 11;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/top/top-plan-03.webp) center / cover no-repeat;
+  margin: 0;
+}
+
+.plan .btn-wrap {
+  justify-content: center;
+}
+
+.plan a.btn-01,
+.plan a.btn-01 {
+  width: 300px;
+}
+
+.plan a.btn-01 span {
+  position: absolute;
+  padding: 16px 0;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.plan a.btn-01 span::after {
+  content: "";
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/arrow-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*
+top - access 
+--------------------------------------------------*/
+section.access {
+  margin-bottom: 0;
+}
+
+.access-img-01 {
+  width: 950px;
+  height: 437px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/footer-01.webp) no-repeat;
+}
+
+/*
+荳句ｱ､繝壹�繧ｸ - 蜈ｱ騾�
+----------------------------------------*/
+.under-main {
+  position: relative;
+  width: 1190px;
+  height: 380px;
+}
+
+.under-main::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.under-main .main-ttl {
+  position: absolute;
+  top: 46%;
+  left: 5%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: "Noto Sans JP";
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.under-main .sub-ttl {
+  padding-left: 1em;
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.under .inner {
+  padding-top: 20px;
+}
+
+.mainContents footer {
+  margin-top: 80px;
+  padding: 20px;
+  background: var(--light-yellow);
+}
+
+.mainContents.under footer nav ul {
+  border-top: none;
+}
+
+/*
+room - 荳句ｱ､繝壹�繧ｸ
+------------------------------------------*/
+.mainContents.room section {
+  margin: 0 0 50px;
+}
+
+.room .info {
+  padding-top: 30px;
+  margin-top: -30px;
+  padding-bottom: 100px;
+}
+
+.mainContents.room .common-room {
+  padding-top: 80px;
+  margin-top: -20px;
+  padding-bottom: 100px;
+}
+
+.visCont.room-main {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/main-img.webp) center / cover no-repeat;
+}
+
+.read {
+  margin: 80px auto;
+  font-size: var(--f-18);
+  line-height: 2;
+  text-align: center;
+}
+
+.room .read-img {
+  width: 950px;
+  height: 440px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/read-img.webp) center / cover no-repeat;
+}
+
+.mainContents.room .link-jmump.section {
+  margin: 60px 0;
+  padding: 0;
+}
+
+.link-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  width: 74%;
+  margin: 0 auto;
+}
+
+.link-box ul li {
+  flex: 1 1 calc(33.333% - 10px); /* 3蛻� */
+  box-sizing: border-box;
+}
+
+.link-box ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 16px 10px;
+  background: var(--light-ocher);
+  color: var(--dark-brown);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.link-box ul li a::after {
+  content: "";
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/circle-down-white.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link-box ul li a i {
+  font-size: 17px;
+}
+
+.link-box ul li {
+  display: flex;
+  align-items: center;
+  width: calc((100% / 5) - 10px);
+}
+
+.link-box ul li a {
+  font-size: 13px;
+}
+
+.link-box ul li a:hover {
+  background: var(--ocher);
+}
+
+.link-box ul li a i.fa-chevron-circle-down {
+  font-size: 16px;
+}
+
+.section.common-room:last-of-type {
+  border-bottom: none;
+}
+
+.section.common-room .column2.half {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section.common-room h3 {
+  margin-bottom: 30px;
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.room-slide {
+  width: 700px;
+  height: 391px;
+}
+
+.room-slide .sp-slide {
+  background-size: 100%;
+}
+
+.room-01 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-01.webp) no-repeat;
+}
+
+.room-02 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-02.webp) no-repeat;
+}
+
+.room-03 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-03.webp) no-repeat;
+}
+
+.room-04 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-04.webp) no-repeat;
+}
+
+.room-05 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-05.webp) no-repeat;
+}
+
+.room-06 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-06.webp) no-repeat;
+}
+
+.room-07 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-07.webp) no-repeat;
+}
+
+.room-08 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-08.webp) no-repeat;
+}
+
+.room-09 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-09.webp) no-repeat;
+}
+
+.room-10 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-10.webp) no-repeat;
+}
+
+.room-11 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-11.webp) no-repeat;
+}
+
+.room-12 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-12.webp) no-repeat;
+}
+
+.room-13 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-13.webp) no-repeat;
+}
+
+.room-14 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-14.webp) no-repeat;
+}
+
+.room-15 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-15.webp) no-repeat;
+}
+
+.room-16 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-16.webp) no-repeat;
+}
+
+.room-17 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-17.webp) no-repeat;
+}
+
+.room-18 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-18.webp) no-repeat;
+}
+
+.room-19 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-19.webp) no-repeat;
+}
+
+.room-20 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-20.webp) no-repeat;
+}
+
+.room-21 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-21.webp) no-repeat;
+}
+
+.room-22 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-22.webp) no-repeat;
+}
+
+.room-23 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-23.webp) no-repeat;
+}
+
+.room-24 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-img-24.webp) no-repeat;
+}
+
+.room-info {
+  width: 950px;
+  height: 431px;
+  background-size: 100%;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/room-info.webp) no-repeat;
+}
+
+.room.under .column2 {
+  margin-top: 20px;
+}
+
+.room.under .column2 h3 {
+  line-height: 1.8;
+  font-size: var(--f-18);
+}
+
+.room.under .column2 p {
+  margin-bottom: 40px;
+}
+
+.room.under .common-room .column2__inner:nth-of-type(1) {
+  width: 80%;
+}
+
+.room.under .common-room .column2__inner:nth-of-type(2) {
+  width: 30%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+#RthCustomizeW .column2.half .column2__inner p {
+  margin: 0 0 30px;
+}
+
+/* 髢灘叙繧雁峙 */
+.image_link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+.image_link img {
+  display: block;
+  width: 100%;
+}
+
+.image_link:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background: #000;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.image_link:after {
+  content: "繧ｯ繝ｪ繝�け諡｡螟ｧ";
+  display: block;
+  color: #fff;
+  line-height: 40px;
+  width: 154px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 3;
+  transition: 0.3s;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  transform: translate(-50%, -50%);
+}
+
+.image_link:hover:before {
+  opacity: 0.5;
+}
+
+.image_link:hover:after {
+  opacity: 1;
+  margin-top: -0.5em;
+}
+
+.common-room dl {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+  padding: 0 0 16px 10px;
+  border-bottom: 1px solid #898989;
+}
+
+.common-room dl dt {
+  width: 180px;
+  font-weight: 600;
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.btn-common {
+  display: block;
+  width: 46%;
+  margin: 30px 0;
+  padding: 6px 20px;
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  color: #fff;
+  font-family: var(--min);
+  font-size: 16px;
+}
+
+.btn-common:hover {
+  background: #001111;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-wrap .btn-plan {
+  width: 46%;
+}
+
+.dl-wrap dd {
+  line-height: 1.8;
+}
+
+.icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.icon-list div {
+  width: 130px;
+  height: auto;
+}
+
+.icon-list figure {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+}
+
+.room.under .icon-list div > p {
+  margin: 8px auto;
+  font-size: 14px;
+  text-align: center;
+}
+
+.room .dl-wrap dd ul li {
+  margin-bottom: 10px;
+  list-style: disc;
+}
+
+/* 螳｢螳､諠��ｱ縺ｨ繝励Λ繝ｳ繝懊ち繝ｳ */
+/* 蜈ｱ騾壹�繧ｿ繝ｳ繧ｹ繧ｿ繧､繝ｫ */
+.room-btn a.btn-01 {
+  width: 270px;
+}
+
+/* btn-02濶ｲ險ｭ螳� */
+.room-btn a.btn-02:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.room-btn a.btn-02:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: var(--ocher);
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.room-btn a.btn-02 span {
+  position: absolute;
+  padding: 16px 0;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.room-btn a.btn-02 {
+  width: 270px;
+  background-color: var(--ocher);
+}
+
+.room-btn a.btn-02::after {
+  background: var(--blue);
+}
+
+.room-btn a.btn-01 span::after,
+.room-btn a.btn-02 span::after {
+  background-image: none;
+}
+
+.amenity-img {
+  width: 950px;
+  height: 1147px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/room/amenity-img-01.webp) center / cover no-repeat;
+}
+
+/*
+譁ｽ險ｭ繝ｻ蛯吝刀譯亥� - 荳句ｱ､繝壹�繧ｸ
+-------------------------------------*/
+.visCont.facility-main {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/main-img.webp) center / cover no-repeat;
+}
+
+#RthCustomizeW .mainContents.facility .ttl-wrap h2 {
+  font-family: "Noto Sans JP", "YuMincho", "Yu Mincho", "貂ｸ譏取悃菴�", "繝偵Λ繧ｮ繝取�譛� ProN", "Hiragino Mincho ProN", sans-serif;
+  font-weight: 500;
+  font-size: var(--f-24);
+  letter-spacing: 0;
+}
+
+.facility.under h3 {
+  margin-bottom: 20px;
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.facility.under .section {
+  margin-bottom: 0;
+}
+
+.facility.under .lounge.section {
+  margin-top: 0;
+}
+
+.facility-slide {
+  width: 521px;
+  height: 285px;
+  margin: 50px 0 50px;
+}
+
+.text-box h3 {
+  text-align: center;
+}
+
+.text-box p {
+  text-align: center;
+}
+
+.text-box figure {
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.facility-slide .sp-slide {
+  background-size: 100%;
+}
+
+.facility-01 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/front-img-01.webp) no-repeat;
+}
+
+.facility-02 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/front-img-02.webp) no-repeat;
+}
+
+.facility-03 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/front-img-03.webp) no-repeat;
+}
+
+.facility-12 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/front-img-04.webp) no-repeat;
+}
+
+.facility-13 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/front-img-05.webp) no-repeat;
+}
+
+/* 繝ｯ繝ｼ繧ｯ繧ｹ繝壹�繧ｹ */
+#workspace{
+  width: 100%;
+  height: 285px;
+  margin-bottom: 20px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/workspace-01.webp) no-repeat;
+}
+
+.workspace .text-box {
+  margin-bottom: 60px;
+}
+
+.workspace .description {
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.workspace .description h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.workspace .description ul {
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+.workspace .price-table {
+  margin-bottom: 80px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.workspace .price-table th,
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.workspace .price-table th {
+  padding: 20px 40px;
+  width: 32%;
+  background-color: #d2b48c;
+}
+
+.workspace .price-table td {
+  background-color: #fffaf0;
+}
+
+.workspace figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.column2.half {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.column2.half .column2__inner {
+  width: 50%;
+}
+
+/* 繝ｬ繝ｳ繧ｿ繝ｫ閾ｪ霆｢霆翫し繝ｼ繝薙せ */
+.facility-07 {
+  width: 100%;
+  height: 285px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/bicycle-img-01.webp) center / cover no-repeat;
+}
+
+.rental繝ｼbicycle p {
+  margin-bottom: 30px;
+}
+.rental繝ｼbicycle .price-table {
+  width: 100%;
+  border: 1px solid #e0d8cf;
+}
+
+.price-table th {
+  background-color: #e6dfd8;
+}
+
+.rental繝ｼbicycle .price-table th,
+.rental繝ｼbicycle .price-table td {
+  padding: 16px 0;
+  border: 1px solid #e0d8cf;
+  text-align: center;
+  width: 25%;
+}
+
+/* 繝ｩ繝ｳ繝峨Μ繝ｼ */
+.laundry .column2.half {
+  margin-top: 50px;
+  align-items: center;
+}
+
+.facility-08 {
+  width: 100%;
+  height: 285px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/laundry-img-01.webp) center / cover no-repeat;
+}
+
+/* 鬮倬溘う繝ｳ繧ｿ繝ｼ繝阪ャ繝医し繝ｼ繝薙せ */
+.wifi.section .column2.half {
+  align-items: center;
+}
+
+.facility-09 {
+  width: 100%;
+  height: 285px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/wifi-img-01.webp) center / cover no-repeat;
+}
+
+/* 鬧占ｻ雁�ｴ */
+#parking{
+  width: 100%;
+  height: 285px;
+  margin-bottom: 20px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/parking-01.webp) center / cover no-repeat;
+}
+
+
+.parking .colomn2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.parking .parking-map-01 {
+  width: 300px;
+  height: 303px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/parking-map.png) center / cover no-repeat;
+}
+
+.parking .text-box {
+  width: 86%;
+  margin: 0 auto 30px;
+}
+
+.parking .table-wrap {
+  width: 100%;
+  margin: 0 auto 30px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.parking .table-wrap tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parking .table-wrap th {
+  flex-basis: 130px;
+  padding: 16px 16px;
+  background: var(--light-yellow);
+  border-bottom: solid 1px #707070;
+  box-sizing: border-box;
+}
+
+.parking .table-wrap td {
+  flex-basis: 370px;
+  line-height: 1.6;
+  padding: 16px 10px;
+  border-bottom: solid 1px #707070;
+}
+
+.parking .text-box ul li {
+  line-height: 1.5;
+  padding: 2px 0 2px 1em;
+  text-indent: -1em;
+}
+
+/* 繝輔Ο繝ｳ繝郁ｲｸ蜃ｺ蛯吝刀 */
+.rental-img-01 {
+  width: 890px;
+  height: 644px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/facility/rental-img-01.webp) center / cover no-repeat;
+}
+
+/* 20024.02.21 - 繝ｬ繧､繧｢繧ｦ繝井ｿｮ豁｣ */
+
+.btn-wrap {
+  gap: 50px;
+  margin: 40px auto 0;
+}
+
+/* 繧ｿ繝門�繧頑崛縺� */
+#tab {
+  margin-top: 50px;
+}
+
+#tab ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 950px;
+}
+
+#tab ul li {
+  flex: 1 1;
+  order: -1;
+  position: relative;
+  min-width: 70px;
+  padding: 1.2em 1em;
+  background-color: #f2f2f2;
+  color: #999;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#tab ul li:hover {
+  background: #7f7f7f;
+}
+
+#tab ul li:hover a {
+  color: #fff;
+}
+
+#tab ul li.active {
+  background: #77a08e;
+  color: #fff;
+}
+
+#tab ul li.active::before {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 9px;
+  background: #77a08e;
+  content: "";
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+#tab ul li.active a {
+  color: #fff;
+}
+
+#tab ul li a {
+  color: #666;
+  font-size: 16px;
+}
+
+#tab .tabbox {
+  margin-top: 50px;
+}
+
+.tabbox .column2 {
+  display: flex;
+  gap: 20px;
+}
+
+.tabbox .column2__inner.floor-map {
+  width: 730px;
+}
+
+.tabbox .column2__inner figure img {
+  width: 100%;
+}
+
+.tabbox .column2__inner h3 {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: var(--f-15);
+}
+
+.tabbox .column2__inner dl {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-size: var(--f-15);
+}
+
+#RthCustomizeW .mainContents.facility .ttl-wrap p {
+  margin: 50px 0;
+}
+
+.view {
+  text-align: center;
+}
+
+/*
+縺疲悃鬟� - 荳句ｱ､繝壹�繧ｸ
+-------------------------------------*/
+.visCont.breakfast-main {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/breakfast/main-img.webp) center / cover no-repeat;
+}
+
+.breakfast .concept-img {
+  width: 950px;
+  height: 440px;
+  margin-bottom: 80px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/breakfast/read-img-01.webp) center / cover no-repeat;
+}
+
+.breakfast .ttl-wrap {
+  margin: 0 auto 50px;
+}
+
+.breakfast.under .breakfast-img {
+  width: 100%;
+  height: 495px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/breakfast/breakfast-img-01.webp) center / cover no-repeat;
+}
+
+.breakfast .column2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 60px auto 0;
+}
+
+.breakfast .column2__inner.img-box {
+  width: 35%;
+}
+
+.breakfast.under .column2__inner.txt-box {
+  width: calc(65% - 20px);
+}
+
+.breakfast.under .column2__inner.txt-box dl {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  border: none;
+}
+
+.breakfast.under .column2__inner.txt-box dt,
+.breakfast.under .column2__inner.txt-box dd {
+  line-height: 1.4;
+  padding: 14px 20px;
+  border-top: 1px solid var(--light-brown);
+}
+
+.breakfast.under .column2__inner.txt-box dt:last-of-type,
+.breakfast.under .column2__inner.txt-box dd:last-of-type {
+  border-bottom: 1px solid var(--light-brown);
+}
+
+.breakfast.under .column2__inner.txt-box dt {
+  flex-basis: 120px;
+  background: var(--light-yellow);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.breakfast.under .column2__inner.txt-box dd {
+  flex-basis: 72%;
+}
+
+.list-wrap {
+  margin-top: 20px;
+}
+
+.list-wrap li {
+  padding: 4px 0;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+}
+
+/* 繝懊ち繝ｳ */
+.breakfast.under .btn-wrap {
+  justify-content: center;
+}
+
+.breakfast.under .btn-wrap {
+  margin: 50px auto 80px;
+}
+
+.breakfast-img-02 {
+  width: 950px;
+  height: 695px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/breakfast/breakfast-img-02.webp) center / cover no-repeat;
+}
+
+#RthCustomizeW .mainContents.food .ttl-wrap h2 {
+  font-family: "Noto Sans JP", "YuMincho", "Yu Mincho", "貂ｸ譏取悃菴�", "繝偵Λ繧ｮ繝取�譛� ProN", "Hiragino Mincho ProN", sans-serif;
+  font-weight: 500;
+  font-size: var(--f-24);
+  letter-spacing: 0;
+}
+
+.card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #898989;
+}
+
+.card {
+  width: 300px;
+}
+
+.card figure {
+  width: 300px;
+  height: 203px;
+}
+
+.info h2 {
+  margin: 50px auto;
+  font-size: 24px;
+  text-align: center;
+}
+
+.info dl {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+  padding: 10px 0 20px 10px;
+  border-bottom: 1px solid #898989;
+}
+
+.info dl dt {
+  min-width: 230px;
+}
+
+.sub-bold {
+  font-weight: bold;
+}
+
+.breakfast.under a.btn-01 {
+  width: 300px;
+}
+
+.breakfast.under a.btn-01 span::after {
+  content: "";
+  position: absolute;
+  right: 23%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/arrow-right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*
+驕弱＃縺玲婿 - 荳句ｱ､繝壹�繧ｸ
+-------------------------------------*/
+.visCont.spend-main {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/main-img.webp) center / cover no-repeat;
+}
+
+.spend-head {
+  width: 950px;
+  height: 376px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/read-img.webp) center / cover no-repeat;
+  margin: 0;
+}
+
+.head-wrap {
+  width: 100%;
+  margin: 0;
+  padding-top: 80px;
+}
+
+.spend p.read-text {
+  margin: 50px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.spend.under .link-jmump.section {
+  margin: 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.spend.under .link-box ul {
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.spend.under .link-box ul li {
+  width: calc((100% / 4) - 10px);
+}
+
+.spend.under .link-box ul li a {
+  font-size: 15px;
+}
+
+/* 繝壹�繧ｸ蜀�Μ繝ｳ繧ｯ繝懊ち繝ｳ */
+.spend.under .cat-01 {
+  color: #fff;
+  background: #3085c3;
+}
+
+.spend.under .cat-02 {
+  color: #fff;
+  background: #8eac50;
+}
+
+.spend.under .cat-03 {
+  color: #fff;
+  background: #e69c3c;
+}
+
+.spend.under .cat-04 {
+  color: #fff;
+  background: #d64949;
+}
+
+/* hover */
+.spend.under .cat-01:hover {
+  background: #1e384b;
+}
+
+.spend.under .cat-02:hover {
+  background: #243d1b;
+}
+
+.spend.under .cat-03:hover {
+  background: #683f36;
+}
+
+.spend.under .cat-04:hover {
+  background: #983434;
+}
+
+.spend .link-box ul li a:hover {
+  color: #fff;
+}
+
+.area-wrap.section {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3繧ｫ繝ｩ繝� 繧ｫ繝ｼ繝� */
+.spend .column3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.spend .column3 .column3__inner {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 3繧ｫ繝ｩ繝�縺ｮ逕ｻ蜒上し繧､繧ｺ蜈ｱ騾� */
+.spend .column3__inner figure {
+  width: 300px;
+  height: 196px;
+  margin: 0;
+}
+
+.spend .column3 p {
+  width: 300px;
+  flex: 1;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  margin-bottom: 30px;
+}
+
+.spend .column3__inner h3 .site-url {
+  color: var(--dark-brown);
+  text-decoration: underline;
+}
+
+.spend .column3__inner h3 .site-url:hover {
+  color: var(--dark-brown);
+}
+
+.spend .column3__inner dl {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.spend .column3__inner dl .time::before {
+  padding-left: 1.8em;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/clock.png) no-repeat;
+}
+
+.spend .column3__inner dl .pin::before {
+  padding-left: 1.8em;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/pin.png) no-repeat;
+}
+
+.spend .column3__inner dl .cutlery::before {
+  padding-left: 1.8em;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/restaurant.png) no-repeat;
+}
+
+.spend .column3__inner h3 {
+  line-height: 1.5;
+  margin: 1em 0;
+  font-size: 15px;
+}
+
+.spend .column3__inner:nth-child(n + 4) p {
+  min-height: 5.2em;
+}
+
+.spend .area-wrap dl {
+  display: flex;
+  gap: 3px;
+  align-items: baseline;
+  line-height: 1.5;
+  margin-bottom: 0;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+  font-size: 13px;
+}
+
+.spend .area-wrap dl dt {
+  flex-basis: 30%;
+}
+
+/* 螳夂分縺ｮ隕ｳ蜈牙慍蟾｡繧頑羅 */
+.head-img-02 {
+  width: 232px;
+  height: 83px;
+  margin: 0 auto 50px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/ttl-img-01.png) center / cover no-repeat;
+}
+
+.area-01 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-01.webp) center/ cover no-repeat;
+}
+
+.area-02 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-02.webp) center/ cover no-repeat;
+}
+
+.area-03 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-03.webp) center/ cover no-repeat;
+}
+
+/* 雎翫°縺ｪ閾ｪ辟ｶ縺ｮ逋偵＠譌� */
+.head-img-03 {
+  width: 249px;
+  height: 86px;
+  margin: 0 auto 50px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/ttl-img-02.png) center / cover no-repeat;
+}
+
+.area-04 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-04.webp) center/ cover no-repeat;
+}
+
+.area-05 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-05.webp) center/ cover no-repeat;
+}
+
+.area-06 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-06.webp) center/ cover no-repeat;
+}
+
+/* 闃ｸ陦薙�譁�喧縺ｫ縺ｵ繧後ｋ譌� */
+.head-img-04 {
+  width: 226px;
+  height: 81px;
+  margin: 0 auto 50px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/ttl-img-03.png) center / cover no-repeat;
+}
+
+.area-07 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-07.webp) center/ cover no-repeat;
+}
+
+.area-08 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-08.webp) center/ cover no-repeat;
+}
+
+.area-09 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-09.webp) center/ cover no-repeat;
+}
+
+/* 豐也ｸ�げ繝ｫ繝｡縺ｮ貅蝟ｫ譌� */
+.head-img-05 {
+  width: 241px;
+  height: 86px;
+  margin: 0 auto 50px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/ttl-img-04.png) center / cover no-repeat;
+}
+
+.spend .column3.area-box-04 {
+  margin-bottom: 50px;
+}
+
+.spend .column3.area-box-04 dl dt {
+  flex-basis: 80px;
+  margin-right: 16px;
+}
+
+.area-10 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-10.webp) center/ cover no-repeat;
+}
+
+.area-11 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-11.webp) center/ cover no-repeat;
+}
+
+.area-12 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-12.webp) center/ cover no-repeat;
+}
+
+.area-13 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-13.webp) center/ cover no-repeat;
+}
+
+.area-14 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-14.webp) center/ cover no-repeat;
+}
+
+.area-15 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-15.webp) center/ cover no-repeat;
+}
+
+/* .area-16 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-16.webp) center/ cover no-repeat;
+}
+
+.area-17 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-17.webp) center/ cover no-repeat;
+}
+
+.area-18 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-18.webp) center/ cover no-repeat;
+}
+
+.area-19 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-19.webp) center/ cover no-repeat;
+}
+
+.area-20 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-20.webp) center/ cover no-repeat;
+}
+
+.area-21 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-21.webp) center/ cover no-repeat;
+}
+
+.area-22 {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/spend/spend-img-22.webp) center/ cover no-repeat;
+} */
+
+.area-wrap h4 {
+  font-size: var(--f-20);
+  text-align: center;
+}
+
+/*
+繧医￥縺ゅｋ縺碑ｳｪ蝠� - 荳句ｱ､繝壹�繧ｸ
+-------------------------------------*/
+.visCont.faq-main {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/faq/main-img.webp) center/ cover no-repeat;
+}
+
+.mainContents.faq.under .link-jmump section{
+  margin: 60px 0 0;
+}
+
+.faq .link-box ul {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.faq .link-box ul li {
+  width: calc((100% / 3) - 10px);
+}
+
+.faq .link-box ul li a {
+  background: var(--light-ocher);
+  color: var(--dark-brown);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.faq .link-box ul li a:hover::after {
+  background-image: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/common/circle-down-white.png);
+}
+
+.faq .link-box ul li a:hover {
+  background: var(--dark-brown);
+  color: #fff;
+}
+
+.faq .header-title {
+  margin-top: -70px;
+  padding-top: 140px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+/*==============================
+accordion
+==============================*/
+
+.accordion_area {
+}
+
+.accordion_area .accordion_one .ac_header {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 1rem 4rem 1rem 2rem;
+  position: relative;
+  z-index: +1;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.accordion_area .accordion_one .ac_header:not(.open):hover {
+  background-color: #f1f8ff;
+}
+
+.accordion_area .accordion_one .ac_header .i_box {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+}
+
+.accordion_area .accordion_one .ac_header .i_box:before,
+.accordion_area .accordion_one .ac_header .i_box:after {
+  position: absolute;
+  content: "";
+  margin: auto;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.accordion_area .accordion_one .ac_header .i_box:before {
+  border-top: 2px solid var(--dark-brown);
+  width: 20px;
+  height: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.accordion_area .accordion_one .ac_header .i_box:after {
+  border-left: 2px solid var(--dark-brown);
+  width: 0;
+  height: 20px;
+  top: 0;
+  bottom: 0;
+  right: 9px;
+  transition: 0.3s;
+}
+
+.accordion_area .accordion_one .ac_header.open .i_box:after {
+  height: 0;
+}
+
+.accordion_area .accordion_one .ac_inner {
+  display: none;
+  padding: 1rem 2rem 1rem 2rem;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/*=========
+faq
+=========*/
+
+.p-faq__headinner {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.p-faq__headinner::before {
+  position: absolute;
+  left: 0;
+  top: -7px;
+  content: "Q";
+  color: var(--blue);
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.p-faq__headinner p.p-faq__q-txt {
+  margin: 0.5em 0 !important;
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  font-size: 15px !important;
+}
+
+.p-faq__bodyinner {
+  display: block;
+  padding-left: 35px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.p-faq__bodyinner::before {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  content: "A";
+  color: #de0000;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.p-faq__bodyinner p.p-faq__a-txt {
+  margin: 0.5em 0 !important;
+  font-size: 15px !important;
+}
+
+.s_section {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 2rem 10px;
+}
+
+.gutter > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/*
+繧｢繧ｯ繧ｻ繧ｹ - 荳句ｱ､繝壹�繧ｸ
+-------------------------------------*/
+.visCont.access-main {
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/access/main-img.webp) center / cover no-repeat;
+}
+
+.mainContents section.monorail {
+  margin: 40px 0 100px 0;
+}
+
+.mainContents section .ttl-wrap {
+  margin-bottom: 50px;
+}
+
+.monorail-img-01 {
+  width: 950px;
+  height: 296px;
+  margin: 50px auto 0;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/access/access-img-01.webp) center / cover no-repeat;
+}
+
+.monorail-img-02 {
+  width: 542px;
+  height: 416px;
+  margin: 50px auto;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/access/access-map-01.webp) center / cover no-repeat;
+}
+
+.bg-beige {
+  width: 750px;
+  margin: 2em auto;
+  background: #ece9e3;
+}
+
+.bg-beige h3 {
+  padding: 20px;
+  color: var(--jp-brown);
+  font-size: var(--f-18);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.car .text-box {
+  margin: 60px 0;
+}
+
+.car .text-box h4 {
+  margin: 1.5em auto;
+  font-size: var(--f-24);
+}
+
+.car-img-01 {
+  width: 950px;
+  height: 88px;
+  margin: 50px auto 0;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/access/access-img-02.webp) center / cover no-repeat;
+}
+
+.parking .column2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 40px;
+}
+
+.parking .parking-img-01 {
+  margin: 0;
+  width: 472px;
+  height: 408px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/access/access-map-01.webp) center / cover no-repeat; 
+}
+
+.parking .parking-img-02 {
+  margin: 0;
+  width: 472px;
+  height: 408px;
+  background: url(https://lolipop-fivestar-co.ssl-lolipop.jp/beachside/images/access/access-map-02.webp) center / cover no-repeat;
+}
+
+.parking .text-box {
+  width: 70%;
+  margin: 0 auto 30px;
+}
+
+.parking .text-box p {
+  text-align: left;
+}
+
+/*
+footer 
+--------------------------------------------------*/
+footer nav {
+  border-bottom: 1px solid var(--dark-brown);
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: flex-start;
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px 0 20px;
+  align-items: center;
+}
+
+footer nav ul li a {
+  display: block;
+  padding: 0 1em;
+  font-family: "Noto Sans JP", "繝｡繧､繝ｪ繧ｪ", Meiryo, "繝偵Λ繧ｮ繝手ｧ偵ざ繧ｷ繝�け", "Hiragino Sans", YuGothic, "Yu Gothic", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--dark-brown);
+}
+
+footer nav ul li a:link,
+footer nav ul li a:visited,
+footer nav ul li a:visited:hover,
+footer nav ul li a:link:hover {
+  color: var(--dark-brown);
+}
+
+footer nav ul li a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+footer .column2.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+footer .column2.footer .address {
+  width: 250px !important;
+}
+
+footer .column2.footer .address ul {
+  margin-top: 10px;
+}
+
+footer .column2.footer .address ul li {
+  padding: 2px 0;
+  font-size: 12px;
+}
+
+footer .column2.footer .address img {
+  width: 100%;
+}
+
+.column2.footer .information {
+  width: 559px;
+}
+
+.column2.footer .information img {
+  width: 100%;
+}
+
+footer .column4 {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+footer .column4 a img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+footer .column4 a img:hover {
+  opacity: 0.6;
+}
+
+.copy-right {
+  padding: 8px 0;
+  background: var(--btn-green);
+  text-align: center;
+}
+
+#RthCustomizeW .mainContents .copy-right p {
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}

@@ -1,0 +1,60 @@
+@charset "Shift_JIS";
+
+body {
+	font-size: 15px;
+}
+input {
+	line-height: 1.2;
+}
+textarea {
+	padding: 0.4em 10px;
+}
+img {
+	vertical-align: bottom;
+}
+b { 
+	font-weight: bold;
+}
+p { line-height: 1.6rem; }
+/* Clearfix */
+.clearfix { min-height: 1%; }
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix { display: inline-table; }
+
+* html .clearfix { height: 1px; }
+.clearfix { display: block; }
+
+.xx-large { font-size: 197%; line-height: 1.8em; }
+.x-large { font-size: 167%; line-height: 1.8em; }
+.large     { font-size: 144%; }
+.mid       { font-size: 122%; }
+.small     { font-size:  92%; }
+.x-small   { font-size:  85%; }
+.xx-small   { font-size:  77%; }
+
+ 
+a { 
+	outline:none;
+	overflow:hidden;
+} 
+
+/* */ a:focus { outline:none; overflow:hidden; } /**/
+
+a:link    { text-decoration: none;}
+a:visited { text-decoration: none;}
+a:hover   { text-decoration: none; transition:all .5s ease-out}
+a:active  { text-decoration: none; }
+
+.mT30{
+	margin-top: 30px;
+}
+.mT50{
+	margin-top: 50px;
+}

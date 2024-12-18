@@ -1,0 +1,40 @@
+.main{
+    /*	height: 670px;*/
+    }
+    
+    #top-main{
+        z-index: 0;
+        top: 0;
+    }
+    .visCatch{
+        position: absolute;
+        left: 240px;
+        top: 230px;
+        z-index: 10;
+    }
+    #htlSide-A{
+        position: absolute;
+        top: 1200px;
+        left: 40px;
+    }
+    
+    /*
+    @media screen and (max-width:1190px){
+        #htlSide-A{
+            left: 0;
+        }
+        .main{
+            height: 670px;
+        }
+    }
+    
+    @media screen and (max-width:820px){
+        #htlSide-A{
+            left: 0;
+        }
+    }
+    
+    */
+    
+    
+    
